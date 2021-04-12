@@ -10,16 +10,15 @@ function isMAC48Address(n) {
   const a = [];
   for (let i = 0; i < z.length; i++) {
     if (
-      z[i] >= 0 ||
-      z[i] === '-' ||
-      z[i] === 'A' ||
-      z[i] === 'B' ||
-      z[i] === 'C' ||
-      z[i] === 'D' ||
-      z[i] === 'E' ||
-      z[i] === 'F'
-    )
-      a.push(z[i]);
+      z[i] >= 0
+      || z[i] === '-'
+      || z[i] === 'A'
+      || z[i] === 'B'
+      || z[i] === 'C'
+      || z[i] === 'D'
+      || z[i] === 'E'
+      || z[i] === 'F'
+    ) a.push(z[i]);
   }
 
   if (n === a.join('')) return true;
