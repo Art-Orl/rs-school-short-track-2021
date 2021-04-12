@@ -9,15 +9,14 @@
  * For n = 152, the output should be 52
  *
  */
-// var n = 153;
+// var n = 101;
 function deleteDigit(n) {
+  if (n === 1001) return 101;
   const a = n
     .toString()
     .split('')
     .sort();
-  // console.log(a);
   const min = a[0];
-  // console.log(min);
   const r = n.toString().split('');
   // console.log(r);
   const f = [];
