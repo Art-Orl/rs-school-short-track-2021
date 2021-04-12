@@ -12,5 +12,4 @@
 function getCommonCharacterCount(/* s1, s2 */) {
   throw new Error('Not implemented');
 }
-
 module.exports = getCommonCharacterCount;
